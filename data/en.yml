@@ -1,0 +1,10 @@
+---
+footer:
+  copyright: "The Other Hemisphere, all rights reserved."
+  hosting: 'Many thanks to company <a href="http://www.lali-net.si/" target="_blank">LALI-NET</a> for hosting this site.'
+menu_items:
+  - [about, "about"]
+  #- [events, "events"]
+  - [contact, "contact us"]
+title: "the other hemisphere"
+---	

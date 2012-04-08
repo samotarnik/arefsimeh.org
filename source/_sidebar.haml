@@ -1,0 +1,8 @@
+%ul
+  - data.send(locale).menu_items.each_with_index do |item,i|
+    %li
+      - if i == selected_index
+        = link_to item[1], "#{item[0]}.html", :class => 'selected'
+      - else
+        = link_to item[1], "#{item[0]}.html"
+

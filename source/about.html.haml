@@ -1,0 +1,22 @@
+- pl = "en"
+
+- content_for :head do
+  %title #{data.send(pl).title} // about us
+
+- content_for :sidebar do
+  = partial "sidebar", :locals => {:selected_index => 0, :locale => pl} 
+
+- content_for :footer do
+  = partial "footer", :locals => {:locale => pl}
+
+%h1.first welcome to the other hemisphere!
+
+%p
+  The Other Hemisphere (Nasprotna hemisfera) is a place of meeting for experts and general public interested in new developments and problems pertaining to modern science. Through seminars, talks, panels and our publishing activity we explore the limits arising from the current division of sience into independent and often self-contained disciplines, and the possible ways of surpassing those limits, both with the help of
+  %em interdisciplinary cooperation 
+  as well as by  
+  %em seeking and establishing transdisciplinary scientific paradigms.
+  In doing so, we aim to evoke interest in these kind of questions and encourage an active search for the answers.
+
+
+   

@@ -1,0 +1,17 @@
+- pl = "si"
+
+- content_for :head do
+  %title #{data.send(pl).title}
+
+- content_for :sidebar do
+  = partial "sidebar", :locals => {:selected_index => 1, :locale => pl}
+  
+
+%h1.first napovednik
+
+%p.red twitter modul
+  
+
+%h1 pretekli dogodki
+
+%p.red rabim seznam in vsebine

@@ -1,0 +1,30 @@
+- pl = "en"
+
+- content_for :head do
+  %title #{data.send(pl).title} // contact us
+
+- content_for :sidebar do
+  = partial "sidebar", :locals => {:selected_index => 1, :locale => pl}
+
+- content_for :footer do
+  = partial "footer", :locals => {:locale => pl}
+
+  
+%h1.first our address
+
+%p
+  Društvo Nasprotna hemisfera
+  %br
+  Cesta 24. junija 32
+  %br
+  1000 Ljubljana
+  %br
+  Slovenia
+
+%h1 on the web
+
+%p
+  = link_to 'e-mail', 'mailto:other.hemisphere@gmail.com'
+  %br
+  = link_to 'facebook', 'http://www.facebook.com/people/@/100001659435286', :target => "_blank"
+  

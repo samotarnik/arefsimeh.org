@@ -1,0 +1,10 @@
+---
+footer:
+  copyright: "Nasprotna Hemisfera, vse pravice pridržane."
+  hosting: 'Za gostovanje se zahvaljujemo podjetju <a href="http://www.lali-net.si/" target="_blank">LALI-NET</a>.'
+menu_items:
+  - [index, "o nas"]
+  #- [dogodki, "dogodki"]
+  - [kontakt, "kontakt"]
+title: "nasprotna hemisfera"
+---	

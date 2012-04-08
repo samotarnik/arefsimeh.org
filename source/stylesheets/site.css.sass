@@ -1,0 +1,133 @@
+@import "compass"
+
+$font-color: #666
+$heading-color: #666
+$border-color: #ccc
+
+@include global-reset
+
+body
+  font-family: 'Open Sans', sans-serif
+  color: $font-color
+  background: image-url('/images/concrete_wall_3.png') top left repeat
+  text-shadow: 0 1px 1px #fff
+  font-size: 14px
+
+a
+  text-decoration: none
+
+em
+  font-style: italic
+
+
+#container
+  margin: 0 auto
+  width: 750px
+  position: relative
+
+  #pocek
+    position: absolute
+    right: 80px
+    top: 0px
+    width: 179px
+    height: 128px
+    background: image-url('/images/pocek.png')
+
+#sidebar
+  float: left
+  width: 240px
+  text-align: right
+  padding: 50px 50px 0 0
+
+  #logo
+    background: image-url('/images/logo.png') top right no-repeat
+    width: 240px
+    height: 190px
+    
+  ul
+    padding-right: 42px
+
+    li
+      list-style: none
+      margin: 30px 0
+
+      a
+        font-family: 'Pacifico', cursive
+        font-size: 1.571em
+        color: #999
+        text-decoration: none
+
+        &:hover
+          color: #666
+
+        &.selected
+          color: #666
+  
+
+    
+#main
+  width: 460px
+  margin-left: 290px
+  padding-top: 130px
+
+  #select-language
+    text-align: right
+    font-size: 0.857em
+    color: #aaa
+
+    a
+      color: #aaa
+      border-bottom: 1px dotted #aaa
+      
+      &:hover
+        color: #666
+        border-bottom: 1px dotted #666
+
+
+  #footer 
+    text-align: left
+    margin-top: 6em
+    border-top: 1px dotted #bbb
+    font-size: 0.786em
+    padding-top: 5px
+    color: #bbb
+    line-height: 150%
+
+    a
+      color: #bbb
+      border-bottom: 1px dotted #bbb
+
+      &:hover
+        color: #666
+        border-bottom: 1px dotted #666
+
+
+  h1
+    font-family: 'Pacifico', cursive
+    color: $heading-color
+    font-size: 1.429em
+    margin: 2em 0 1em 0
+
+    &.first
+      color: #518FCC
+
+  p
+    line-height: 1.8em
+
+  a
+    color: #666
+    border-bottom: 1px dotted #666
+
+    &:hover
+      color: #333
+      border-bottom: 1px dotted #333
+
+#newsfeed
+  display: none
+  color: #3E7337
+
+  h1
+    color: #3E7337
+
+  #posts
+    padding-bottom: 2em
